@@ -14,6 +14,7 @@
 		E267B0D021ADB2E800F4AFE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E267B0CE21ADB2E800F4AFE8 /* LaunchScreen.storyboard */; };
 		E267B0DB21ADB2E800F4AFE8 /* juste_nombreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267B0DA21ADB2E800F4AFE8 /* juste_nombreTests.swift */; };
 		E267B0E621ADB2E800F4AFE8 /* juste_nombreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267B0E521ADB2E800F4AFE8 /* juste_nombreUITests.swift */; };
+		E267B0F621ADBF1200F4AFE8 /* JusteNombreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267B0F521ADBF1200F4AFE8 /* JusteNombreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E267B0E121ADB2E800F4AFE8 /* juste nombreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "juste nombreUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E267B0E521ADB2E800F4AFE8 /* juste_nombreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = juste_nombreUITests.swift; sourceTree = "<group>"; };
 		E267B0E721ADB2E800F4AFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E267B0F521ADBF1200F4AFE8 /* JusteNombreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JusteNombreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				E267B0CC21ADB2E800F4AFE8 /* Assets.xcassets */,
 				E267B0CE21ADB2E800F4AFE8 /* LaunchScreen.storyboard */,
 				E267B0D121ADB2E800F4AFE8 /* Info.plist */,
+				E267B0F521ADBF1200F4AFE8 /* JusteNombreViewController.swift */,
 			);
 			path = "juste nombre";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E267B0F621ADBF1200F4AFE8 /* JusteNombreViewController.swift in Sources */,
 				E267B0C821ADB2DF00F4AFE8 /* ViewController.swift in Sources */,
 				E267B0C621ADB2DF00F4AFE8 /* AppDelegate.swift in Sources */,
 			);
