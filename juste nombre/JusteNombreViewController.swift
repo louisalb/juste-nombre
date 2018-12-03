@@ -14,13 +14,13 @@ class JusteNombreViewController: UIViewController {
     @IBOutlet weak var valider: UIButton!
     @IBOutlet weak var afficheIndice: UILabel!
     @IBOutlet weak var textField: UITextField!
+    let reponse:Int = Int(arc4random_uniform(100) + 1)
     override func viewDidLoad() {
         super.viewDidLoad()
-        actionValider(valider)
         
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -29,11 +29,24 @@ class JusteNombreViewController: UIViewController {
         calcul()
     }
     func calcul() {
-        let reponse = Int(arc4random_uniform(100) + 1)
+        
         let nb :Int = Int(textField.text!)!
         if  nb < reponse && reponse > 0 {
             afficheIndice.text = "plus"
         }
+        if  nb > reponse && reponse < 101 {
+            afficheIndice.text = "moins"
+        }
+        if  nb > 100 {
+            afficheIndice.text = "entrer un nombre inferieur à 101"
+        }
+        if  nb < 1 {
+            afficheIndice.text = "entrer un nombre superieur à 0"
+        }
+        if  nb == reponse {
+            afficheIndice.text = "gagné"
+        }
+        self.view.endEditing(true)
         
     }
 
