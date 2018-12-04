@@ -72,6 +72,7 @@ class JusteNombreViewController: UIViewController {
            performSegue(withIdentifier: "segue2", sender: nil)
         }
         self.view.endEditing(true)
+        
         self.coups = self.coups+1
         
         
