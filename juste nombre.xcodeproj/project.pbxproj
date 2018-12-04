@@ -15,6 +15,8 @@
 		E267B0DB21ADB2E800F4AFE8 /* juste_nombreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267B0DA21ADB2E800F4AFE8 /* juste_nombreTests.swift */; };
 		E267B0E621ADB2E800F4AFE8 /* juste_nombreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267B0E521ADB2E800F4AFE8 /* juste_nombreUITests.swift */; };
 		E267B0F621ADBF1200F4AFE8 /* JusteNombreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267B0F521ADBF1200F4AFE8 /* JusteNombreViewController.swift */; };
+		E275222921B6B6B700D3874F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275222821B6B6B700D3874F /* FirstViewController.swift */; };
+		E275222B21B6C62900D3874F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275222A21B6C62900D3874F /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E267B0E521ADB2E800F4AFE8 /* juste_nombreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = juste_nombreUITests.swift; sourceTree = "<group>"; };
 		E267B0E721ADB2E800F4AFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E267B0F521ADBF1200F4AFE8 /* JusteNombreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JusteNombreViewController.swift; sourceTree = "<group>"; };
+		E275222821B6B6B700D3874F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E275222A21B6C62900D3874F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				E267B0CE21ADB2E800F4AFE8 /* LaunchScreen.storyboard */,
 				E267B0D121ADB2E800F4AFE8 /* Info.plist */,
 				E267B0F521ADBF1200F4AFE8 /* JusteNombreViewController.swift */,
+				E275222821B6B6B700D3874F /* FirstViewController.swift */,
+				E275222A21B6C62900D3874F /* ThirdViewController.swift */,
 			);
 			path = "juste nombre";
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 			files = (
 				E267B0F621ADBF1200F4AFE8 /* JusteNombreViewController.swift in Sources */,
 				E267B0C821ADB2DF00F4AFE8 /* ViewController.swift in Sources */,
+				E275222B21B6C62900D3874F /* ThirdViewController.swift in Sources */,
 				E267B0C621ADB2DF00F4AFE8 /* AppDelegate.swift in Sources */,
+				E275222921B6B6B700D3874F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

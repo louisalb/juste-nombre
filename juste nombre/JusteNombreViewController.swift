@@ -14,10 +14,32 @@ class JusteNombreViewController: UIViewController {
     @IBOutlet weak var valider: UIButton!
     @IBOutlet weak var afficheIndice: UILabel!
     @IBOutlet weak var textField: UITextField!
-    let reponse:Int = Int(arc4random_uniform(100) + 1)
+    var reponse:Int!
+    var borneInff:Int!
+    var borneSupp:Int!
+    var coups:Int = 0
+    @IBOutlet weak var borneInf: UILabel!
+    @IBOutlet weak var borneSup: UILabel!
+    
+    var index:Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if self.index == 0 {
+            self.borneInff = 1
+            self.borneSupp = 100
+        }
+        if self.index == 1 {
+            self.borneInff = 1
+            self.borneSupp = 1000
+        }
+        if self.index == 2 {
+            self.borneInff = 1
+            self.borneSupp = 10000
+        }
+        self.borneInf.text = String(self.borneInff)
+        self.borneSup.text = String(self.borneSupp)
+        self.reponse = Int(arc4random_uniform(UInt32(self.borneSupp)) + 1)
         // Do any additional setup after loading the view.
     }
     
@@ -27,29 +49,40 @@ class JusteNombreViewController: UIViewController {
     }
     @IBAction func actionValider(_ sender: UIButton) {
         calcul()
+        
     }
     func calcul() {
         
         let nb :Int = Int(textField.text!)!
-        if  nb < reponse && reponse > 0 {
+        if  nb < reponse && reponse > self.borneInff-1 {
             afficheIndice.text = "plus"
+            self.borneInf.text = String(nb)
         }
-        if  nb > reponse && reponse < 101 {
+        if  nb > reponse && reponse < self.borneSupp+1 {
             afficheIndice.text = "moins"
+            self.borneSup.text = String(nb)
         }
-        if  nb > 100 {
+        if  nb > borneSupp {
             afficheIndice.text = "entrer un nombre inferieur à 101"
         }
-        if  nb < 1 {
+        if  nb < borneInff {
             afficheIndice.text = "entrer un nombre superieur à 0"
         }
         if  nb == reponse {
-            afficheIndice.text = "gagné"
+           performSegue(withIdentifier: "segue2", sender: nil)
         }
         self.view.endEditing(true)
+        self.coups = self.coups+1
+        
         
     }
-
+    override func prepare(for segue:UIStoryboardSegue, sender:Any?){
+        if segue.identifier == "segue2" {
+            if let destinationVC = segue.destination as? ThirdViewController {
+                destinationVC.coups = self.coups
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 
